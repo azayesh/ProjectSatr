@@ -36,6 +36,7 @@ body {
     padding: 5px 15px;
     transition: 0.3s;
     position: relative;
+    cursor: pointer;
 }
 
 .bar ul li span::after {
