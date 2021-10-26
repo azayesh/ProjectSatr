@@ -1,195 +1,201 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap");
 * {
-    margin: 0; padding: 0; box-sizing: border-box; direction: rtl;
-    font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 body {
-    width: 100%;
-    height: 100vh;
-    background-image: url(sun-tornado.svg);
-    position: relative;
-    overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background-image: url(sun-tornado.svg);
+  position: relative;
+  overflow: hidden;
 }
 .bar {
-    background-color: #4baab9;
-    width: 100%;
-    height: 40px;
-    position: relative;
-    overflow: hidden;
-    color: #fff;
+  background-color: #4baab9;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
 }
 @media (max-width: 450px) {
-    .bar span {
-        font-size: 10px;
-    }
+  .bar span {
+    font-size: 10px;
+  }
 }
 .bar ul {
-    display: flex;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  display: flex;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .bar ul li {
-    padding: 5px 15px;
-    transition: 0.3s;
-    position: relative;
-    cursor: pointer;
+  padding: 5px 15px;
+  transition: 0.3s;
+  position: relative;
+  cursor: pointer;
 }
 
 .bar ul li span::after {
-    content: '';
-    position: absolute;
-    display: block;
-    left: 0;
-    width: 100%;
-    height: 1.5px;
-    background: #fb8ab8;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 300ms ease-in;
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: #fb8ab8;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 300ms ease-in;
 }
-.bar ul li span:hover::after{
-    transform: scaleX(1);
+.bar ul li span:hover::after {
+  transform: scaleX(1);
 }
-nav ul .special{
-    background: #2a3b82;
-    color: white;
-    height: 100%;
+nav ul .special {
+  background: #2a3b82;
+  color: white;
+  height: 100%;
 }
 section {
-    position: relative;
-    width: 100%;
-    height: 100%;
-
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 .card {
-    position: absolute;
-    top: 10%;
-    width: 350px;
-    height: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    background-color: #2a3b82;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 20px #888888;
+  position: absolute;
+  top: 10%;
+  width: 350px;
+  height: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: #2a3b82;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px #888888;
 }
 .card nav {
-    height: 20px;
-    background-color: #4baab9;
-    position: relative;
+  height: 20px;
+  background-color: #4baab9;
+  position: relative;
 }
 .card nav span {
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    opacity: 0.8;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  opacity: 0.8;
 }
 .card nav .yalo {
-    right: 25px;
-    background-color: yellow;
+  right: 25px;
+  background-color: yellow;
 }
 .card nav .red {
-    right: 10px;
-    background-color: red;
+  right: 10px;
+  background-color: red;
 }
 .card nav .green {
-    right: 40px;
-    background-color: green;
+  right: 40px;
+  background-color: green;
 }
 .card .tixt span {
-    padding-left: 10px;
-    position: absolute;
-    z-index: 4;
-    left: 25px;
+  padding-left: 10px;
+  position: absolute;
+  z-index: 4;
+  left: 25px;
 }
 .span1 {
-    width: 30%;
-    height: 10px;
-    top: 15%;
+  width: 30%;
+  height: 10px;
+  top: 15%;
 }
 .span2 {
-    top: 20%
+  top: 20%;
 }
 .span3 {
-    width: 85%;
-    height: 3px;
-    top: 25%;
+  width: 85%;
+  height: 3px;
+  top: 25%;
 }
-.span1, .span3, .span7 {
-    background: #fff;
+.span1,
+.span3,
+.span7 {
+  background: #fff;
 }
-.span2, .span5 {
-    background: #fb8ab8;
-    height: 4px;
-    width: 45%;
+.span2,
+.span5 {
+  background: #fb8ab8;
+  height: 4px;
+  width: 45%;
 }
-.span4, .span6 {
-    background: #4baab9;
-    width: 80%;
-    height: 8px;
+.span4,
+.span6 {
+  background: #4baab9;
+  width: 80%;
+  height: 8px;
 }
 .span4 {
-    bottom: 25%;
+  bottom: 25%;
 }
 .span5 {
-    bottom: 20%;
+  bottom: 20%;
 }
 .span6 {
-    bottom: 15%;
+  bottom: 15%;
 }
 .span7 {
-    width: 75%;
-    height: 2px;
-    bottom: 10%;
+  width: 75%;
+  height: 2px;
+  bottom: 10%;
 }
 .card h1 {
-    color: #fff;
-    position: absolute;
-    font-size: 120px;
-    font-weight:normal;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
+  color: #fff;
+  position: absolute;
+  font-size: 120px;
+  font-weight: normal;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .sup {
-    width: 100%;
-    bottom: 20%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
+  width: 100%;
+  bottom: 20%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
 .sup h2 {
-    width: fit-content;
-    margin: 0 auto;
-    font-size: 30px;
-    backdrop-filter: blur(8px);
-    color: #4baab9;
-    padding-bottom: 20px;
-    font-weight: normal;
-    text-shadow: 0px 0px 5px rgba(136, 136, 136, 0.295);
-} 
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 30px;
+  backdrop-filter: blur(8px);
+  color: #4baab9;
+  padding-bottom: 20px;
+  font-weight: normal;
+  text-shadow: 0px 0px 5px rgba(136, 136, 136, 0.295);
+}
 .sup button {
-    font-size: 20px;
-    border: none;
-    background-color: #4baab9;
-    color: #fff;
-    padding: 5px 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.384);
-    cursor: pointer;
+  font-size: 20px;
+  border: none;
+  background-color: #4baab9;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.384);
+  cursor: pointer;
 }
 .sup a {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 .sup a:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
