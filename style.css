@@ -192,10 +192,8 @@ section {
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.384);
   cursor: pointer;
-}
-.sup a {
   transition: 0.3s;
 }
-.sup a:hover {
-  opacity: 0.8;
+.sup a:hover button {
+  background-color: #2a3b82;
 }
